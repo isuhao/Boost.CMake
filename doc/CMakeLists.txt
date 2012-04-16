@@ -16,7 +16,6 @@ if(NOT ASCIIDOC_EXECUTABLE)
   return()
 endif(NOT ASCIIDOC_EXECUTABLE)
 
-include(RypplFindPackage)
 ryppl_find_package(Boostbook)
 include(BoostDocumentation)
 

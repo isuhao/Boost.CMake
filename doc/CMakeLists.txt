@@ -10,12 +10,14 @@ if(BOOST_INITIAL_PASS)
   return()
 endif()
 
-find_package(AsciiDoc)
+include(RypplFindPackage)
+ryppl_find_package(AsciiDoc)
 if(NOT ASCIIDOC_EXECUTABLE)
   return()
 endif(NOT ASCIIDOC_EXECUTABLE)
 
-find_package(Boostbook)
+include(RypplFindPackage)
+ryppl_find_package(Boostbook)
 include(BoostDocumentation)
 
 set(depends)
